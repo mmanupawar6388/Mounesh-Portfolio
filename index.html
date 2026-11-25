@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mounesh — Backend & Applied ML Engineer</title>
+<meta name="description" content="Mounesh — Final-year CSE student building Python backend systems and applied ML. Django, FastAPI, PyTorch, Hugging Face.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="loader" id="loader">
+  <div class="loader-line"><span>$</span> booting mounesh.dev<span class="cursor">_</span></div>
+</div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">mounesh<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-nav>about</a></li>
+      <li><a href="#stack" data-nav>stack</a></li>
+      <li><a href="#experience" data-nav>experience</a></li>
+      <li><a href="#projects" data-nav>projects</a></li>
+      <li><a href="#education" data-nav>education</a></li>
+      <li><a href="#contact" data-nav>contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="terminal" id="terminal">
+        <div class="terminal-bar">
+          <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+          <span class="terminal-title">session — mysuru/in</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+
+      <h1 class="hero-title">
+        Backend systems &amp; applied ML,<br> shipped and deployed.
+      </h1>
+      <p class="hero-sub">
+        Final-year Computer Science (Data Science) student building Python backends and
+        machine learning tools — from REST APIs serving ML models to a fine-tuned GPT‑2
+        assistant running live for students.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See the work</a>
+        <a href="mailto:manupawar967@gmail.com" class="btn btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="hero-meta">
+        <span>Mysuru, Karnataka</span>
+        <span class="sep">·</span>
+        <span>Open to backend / ML internships — Dec 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="section-head">
+        <h2>About</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="about-copy">
+        <p>
+          I'm a final-year CSE student at Maharaja Institute of Technology, Mysore, graduating
+          in 2027 with a CGPA of 9.01. My work sits between two things I keep coming back to:
+          building backend services that hold up, and applying machine learning where it
+          actually helps someone.
+        </p>
+        <p>
+          That's shown up as a GPT‑2 study assistant deployed on Hugging Face Spaces, REST
+          APIs built with FastAPI and Django, and a CNN‑BiLSTM model for gait‑based emotion
+          recognition. I'm currently deepening that backend and ML foundation through a
+          structured training program at Qspiders, Mysuru, and solving DSA problems on the
+          side.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="9.01">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Deployed / built projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="35">0</span>
+            <span class="stat-label">LeetCode problems solved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section section-alt" id="stack">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>How it's built</h2>
+        <div class="rule"></div>
+        <p class="section-note">The stack, layered the way a request actually travels through it.</p>
+      </div>
+
+      <div class="stack-diagram">
+        <div class="stack-layer" data-layer="languages">
+          <div class="layer-label">
+            <span class="layer-name">Languages</span>
+            <span class="layer-desc">what everything is written in</span>
+          </div>
+          <div class="layer-chips">
+            <span class="chip chip-core">Python</span>
+            <span class="chip chip-core">SQL</span>
+          </div>
+        </div>
+
+        <div class="stack-layer" data-layer="backend">
+          <div class="layer-label">
+            <span class="layer-name">Backend</span>
+            <span class="layer-desc">serving &amp; data</span>
+          </div>
+          <div class="layer-chips">
+            <span class="chip">Django</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">Flask</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">MySQL</span>
+          </div>
+        </div>
+
+        <div class="stack-layer" data-layer="ml">
+          <div class="layer-label">
+            <span class="layer-name">Machine learning</span>
+            <span class="layer-desc">models &amp; inference</span>
+          </div>
+          <div class="layer-chips">
+            <span class="chip chip-ml">PyTorch</span>
+            <span class="chip chip-ml">OpenCV</span>
+            <span class="chip chip-ml">scikit-learn</span>
+            <span class="chip chip-ml">Pandas</span>
+            <span class="chip chip-ml">NumPy</span>
+            <span class="chip chip-ml">Hugging Face Transformers</span>
+          </div>
+        </div>
+
+        <div class="stack-layer" data-layer="tools">
+          <div class="layer-label">
+            <span class="layer-name">Tools</span>
+            <span class="layer-desc">build, ship, run</span>
+          </div>
+          <div class="layer-chips">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">Gradio</span>
+            <span class="chip">Google Gemini API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dsa-note">
+        <span class="dsa-mono">$ leetcode --solved</span>
+        <span class="dsa-text">30–40 data structures &amp; algorithms problems solved in Python</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-rail"><span class="timeline-node"></span></div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <h3>Python &amp; Data Science Intern <span class="role-tag">Training</span></h3>
+              <span class="timeline-date">Sept 2026 — Present</span>
+            </div>
+            <p class="timeline-org">Qspiders, Mysuru</p>
+            <p class="timeline-desc">
+              Completed structured training in Python — data types, control flow, functions —
+              and SQL, covering joins, primary/foreign keys, and DDL/DML. Currently working
+              through aptitude and machine learning modules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="rule"></div>
+        <p class="section-note">Three systems, three different jobs: talk to students, clean messy data, read a walk.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">live · deployed</span>
+            <h3>CampusMate</h3>
+            <p class="project-role">AI student assistant</p>
+          </div>
+          <p class="project-desc">
+            A GPT‑2 model fine-tuned on student-oriented data, wrapped in a Gradio interface.
+            Handles open chat, generates study plans, runs viva practice with feedback, and
+            includes a built-in calculator tool.
+          </p>
+          <ul class="project-stack">
+            <li>Python</li><li>GPT-2</li><li>Hugging Face</li><li>Gradio</li>
+          </ul>
+          <a href="https://huggingface.co/spaces/manupawar6388/campusmate" target="_blank" rel="noopener" class="project-link">
+            huggingface.co/spaces/manupawar6388/campusmate
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">local build</span>
+            <h3>DataLens</h3>
+            <p class="project-role">Sales data cleaning &amp; analytics tool</p>
+          </div>
+          <p class="project-desc">
+            A Streamlit app for CSV profiling and cleaning — missing values, duplicates — with
+            a sales dashboard covering KPIs, revenue by category and city, and price
+            distributions. Includes a natural-language Q&amp;A assistant that answers supported
+            revenue questions directly and calls the Gemini API for broader ones.
+          </p>
+          <ul class="project-stack">
+            <li>Python</li><li>Streamlit</li><li>Pandas</li><li>NumPy</li><li>Gemini API</li>
+          </ul>
+          <span class="project-link project-link-static">localhost:8501</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag">in validation</span>
+            <h3>Emotional Gait Recognition System</h3>
+            <p class="project-role">Video / webcam-based gait analysis</p>
+          </div>
+          <p class="project-desc">
+            A CNN‑BiLSTM architecture with temporal attention, served through a FastAPI REST
+            API with five endpoints for video- and webcam-based gait analysis. Currently being
+            validated on real-world data after synthetic test runs exposed evaluation gaps.
+          </p>
+          <ul class="project-stack">
+            <li>Python</li><li>PyTorch</li><li>OpenCV</li><li>FastAPI</li><li>Docker</li>
+          </ul>
+          <a href="https://github.com/mmanupawar6388/CNN_GAIT-EMOTIONS" target="_blank" rel="noopener" class="project-link">
+            github.com/mmanupawar6388/CNN_GAIT-EMOTIONS
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + CERTS -->
+  <section class="section" id="education">
+    <div class="section-inner edu-grid">
+      <div>
+        <div class="section-head">
+          <h2>Education</h2>
+          <div class="rule"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-rail"><span class="timeline-node"></span></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3>B.E. Computer Science &amp; Engineering <span class="role-tag">Data Science</span></h3>
+                <span class="timeline-date">2023 — 2027</span>
+              </div>
+              <p class="timeline-org">Maharaja Institute of Technology, Mysore</p>
+              <p class="timeline-desc">CGPA: 9.01</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-head">
+          <h2>Certifications</h2>
+          <div class="rule"></div>
+        </div>
+        <ul class="cert-list">
+          <li>
+            <span class="cert-name">Applied Machine Learning in Python</span>
+            <span class="cert-org">University of Michigan · Coursera, 2026</span>
+          </li>
+          <li>
+            <span class="cert-name">AWS Cloud Practitioner Essentials</span>
+            <span class="cert-org">AWS · Coursera, 2025</span>
+          </li>
+        </ul>
+
+        <div class="section-head activities-head">
+          <h2>Activities</h2>
+          <div class="rule"></div>
+        </div>
+        <p class="activity-text">
+          Participated in Hackverse 2025, a Stack Forge Hackathon held at Maharaja Institute of
+          Technology Mysore.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="contact-head">
+        <span class="contact-mono">POST /contact</span>
+        <h2>Let's build something.</h2>
+        <p>Open to backend and applied ML internship roles starting December 2026.</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:manupawar967@gmail.com" class="contact-card">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">manupawar967@gmail.com</span>
+        </a>
+        <a href="tel:+919731506388" class="contact-card">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 97315 06388</span>
+        </a>
+        <a href="https://linkedin.com/in/manu-pawar-0352702b7" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">manu-pawar-0352702b7</span>
+        </a>
+        <a href="https://github.com/mmanupawar6388" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">mmanupawar6388</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>Mounesh — Mysuru, Karnataka</span>
+    <span class="footer-sep">·</span>
+    <a href="https://manu-pawar-portfolio.lovable.app" target="_blank" rel="noopener">previous portfolio</a>
+  </footer>
+
+</main>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
